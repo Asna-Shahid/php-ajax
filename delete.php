@@ -1,9 +1,5 @@
 <?php
-$server="localhost";
-$user="root";
-$password="";
-$database="test";
-$dba=mysqli_connect($server,$user,$password,$database);
+include("./db.php");
 $student_id=$_POST["id"];
 $query="DELETE FROM students WHERE id={$student_id}";
 if(mysqli_query($dba,$query)){

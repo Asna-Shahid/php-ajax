@@ -1,9 +1,6 @@
 <?php
-$server="localhost";
-$user="root";
-$password="";
-$database="test";
-$dba=mysqli_connect($server,$user,$password,$database);
+
+include("./db.php");
 $query="SELECT * FROM students";
 $result=mysqli_query($dba,$query);
 $output="";

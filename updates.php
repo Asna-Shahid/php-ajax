@@ -1,12 +1,8 @@
 <?php
-
+include("./db.php");
 $student_id=$_POST["id"];
 
-$server="localhost";
-$user="root";
-$password="";
-$database="test";
-$dba=mysqli_connect($server,$user,$password,$database);
+
 $query="SELECT * FROM students WHERE id={$student_id}";
 $result=mysqli_query($dba,$query);
 $output="";
