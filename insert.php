@@ -65,8 +65,10 @@ $.ajax({
     }
     loadTable();
     $("#save-btn").on("click",function(){
-        var fname=$("#fname").val();
-        var lname=$("#lname").val();
+      
+var fname=$("#fname").val();
+var lname=$("#lname").val();
+
         $.ajax({
             url:"add.php",
             type:"POST",
